@@ -1,0 +1,1 @@
+. "/home/mmoellen/Documents/development/cmake_examples/02-sub-projects/A-basic/conanbuildenv-release-x86_64.sh"
