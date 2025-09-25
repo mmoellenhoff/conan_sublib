@@ -29,12 +29,13 @@ class helloRecipe(ConanFile):
             self.options.rm_safe("fPIC")
 
     def layout(self):
-        self.folders.root = ".."
-        self.folders.source = "."
-        self.folders.build = "build"
-        self.cpp.package.libs = ["sublibrary1"]
-        self.cpp.package.includedirs = ["include"]
-        self.cpp.package.libdirs = ["lib/sublibrary1"]
+        cmake_layout(self)
+        #self.folders.root = ".."
+        #self.folders.source = "."
+        #self.folders.build = "build"
+        #self.cpp.package.libs = ["sublibrary1"]
+        #self.cpp.package.includedirs = ["include"]
+        #self.cpp.package.libdirs = ["lib/sublibrary1"]
 
     def export_sources(self):
         folder = os.path.join(self.recipe_folder, "..")
