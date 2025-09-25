@@ -5,5 +5,10 @@ can be organised into multiple folders and sub-projects to ease development.
 
 The examples included are
 
-  - link:A-basic[basic] - This basic example includes a static library, a header only library
-  and an executable
+  - link:A-basic[basic] - This basic cmake example includes two static library and an executable
+   built using CMake
+
+  - link:A-basic_conan[basic] - This basic conan and cmake example includes two static library and an executable
+   built using conan and cmake to build each library and executable as a conan package
+
+ 
